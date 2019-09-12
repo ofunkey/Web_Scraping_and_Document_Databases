@@ -34,9 +34,9 @@ pressure at 7.70 hPa
 
 
 ### Mars Hemispheres
-```python
 * Visit the USGS Astrogeology site to obtain high resolution images for each of Mar's hemispheres.
-```[{'title': 'Cerberus Hemisphere Enhanced',
+```python
+[{'title': 'Cerberus Hemisphere Enhanced',
   'img_url': 'https://astrogeology.usgs.gov/cache/images/cfa62af2557222a02478f1fcd781d445_cerberus_enhanced.tif_full.jpg'},
  {'title': 'Schiaparelli Hemisphere Enhanced',
   'img_url': 'https://astrogeology.usgs.gov/cache/images/3cdd1cbf5e0813bba925c9030d13b62e_schiaparelli_enhanced.tif_full.jpg'},
@@ -45,3 +45,12 @@ pressure at 7.70 hPa
  {'title': 'Valles Marineris Hemisphere Enhanced',
   'img_url': 'https://astrogeology.usgs.gov/cache/images/7cf2da4bf549ed01c17f206327be4db7_valles_marineris_enhanced.tif_full.jpg'}]
   ```
+
+## 2. MongoDB and Flask Application
+Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above
+* First Jupyter notebook is converted into a Python script called scrape_mars.py with a function called scrape that executes all of the scraping code from above and return one Python dictionary containing all of the scraped data.
+* Next, a route called /scrape that will import your scrape_mars.py script is created and called your scrape function.
+  * Then, the return value in Mongo is stored as a Python dictionary.
+* A root route / that queries the Mongo database is created and the mars data is passed into an HTML template to display the data.
+
+* Next a template HTML file called index.html that takes the mars data dictionary is created to display all of the data in the appropriate HTML elements. 
