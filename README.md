@@ -6,6 +6,7 @@ Scraping, MongoDB and Flask Application
 In this work, a web application that scrapes various websites for data related to the Mission to Mars is created and the information is displayed in a single HTML page.
 
 ## 1. Scraping and Analysis Task
+* Complete the initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Splinter.
 
 ### NASA Mars News
 * Scrape the NASA Mars News Site and collect the latest News Title and Paragraph Text. 
