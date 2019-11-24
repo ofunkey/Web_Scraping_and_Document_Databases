@@ -50,7 +50,7 @@ pressure at 7.70 hPa
 ## 2. MongoDB and Flask Application
 Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above
 * First Jupyter notebook is converted into a Python script called scrape_mars.py with a function called scrape that executes all of the scraping code from above and return one Python dictionary containing all of the scraped data.
-* Next, a route called /scrape that will import your scrape_mars.py script is created and called your scrape function.
+* Next, a route called /scrape that will import the scrape_mars.py script is created and called scrape function.
   * Then, the return value in Mongo is stored as a Python dictionary.
 * A root route / that queries the Mongo database is created and the mars data is passed into an HTML template to display the data.
 
